@@ -1,0 +1,38 @@
+{
+  "name": "genpark-ai-social-ad-creative-multi-variant-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI social ad creative engine that generates multi-variant high-converting ad copy, headlines, and CTA combinations for A/B testing.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "social-ads",
+    "ad-creative",
+    "a-b-testing",
+    "performance-marketing",
+    "adant"
+  ],
+  "inputs": {
+    "product_description": {
+      "type": "string"
+    },
+    "target_audience": {
+      "type": "string"
+    },
+    "ad_platform": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "ad_variants": {
+      "type": "array"
+    },
+    "recommended_variant": {
+      "type": "object"
+    },
+    "estimated_ctr_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
